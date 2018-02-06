@@ -45,16 +45,16 @@
  * @ingroup themeable
  */
 #}
-<div class="layout-container">
+<div class="layout-container container">
 
-    <header class="header" role="banner">
-        <div class="header_first">
+    <header class="header row" role="banner">
+        <div class="col-lg-4 col-md-4 col-sm-12 header_first">
             {{ page.header_first }}
         </div>
-        <div class="header_second">
+        <div class="col-lg-4 col-md-4 col-sm-12 header_second">
             {{ page.header_second }}
         </div>
-        <div class="header_third">
+        <div class="col-lg-4 col-md-4 col-sm-12 header_third">
             {{ page.header_third }}
         </div>
     </header>
@@ -63,55 +63,62 @@
     <div class="navbar">
         {{ page.navbar }}
     </div>
-    {{ page.breadcrumb }}
-    {{ page.help }}
 
-    <div class="features">
-        <div class="features_first">
+
+        {# TODO style them if you see some content, one might wrap them #}
+        {#{{ page.breadcrumb }}
+        {{ page.help }}#}
+
+
+
+    <div class="features row">
+        <div class="features_first col-lg-4 col-md-4 col-sm-12">
             {{ page.features_first }}
         </div>
-        <div class="features_second">
+        <div class="features_second col-lg-4 col-md-4 col-sm-12">
             {{ page.features_second }}
         </div>
-        <div class="features_third">
+        <div class="features_third col-lg-4 col-md-4 col-sm-12">
             {{ page.features_third }}
         </div>
     </div>
 
     {{ page.highlighted }}
 
-    <main role="main" class="main">
+    <main role="main" class="container">
+
         {#<a id="main-content" tabindex="-1"></a>#}{# link is in html.html.twig #}
         {% if page.sidebar_first %}
-            <aside class="layout-sidebar-first" role="complementary">
+            <div class="layout-sidebar-first col-lg-2 col-md-3 col-sm-12" role="complementary">
                 {{ page.sidebar_first }}
-            </aside>
+            </div>
         {% endif %}
 
-        <div class="layout-content">
+        <div class="layout-content col-lg-8 col-md-6 col-sm-12">
             {{ page.content }}
         </div>{# /.layout-content #}
 
         {% if page.sidebar_second %}
-            <aside class="layout-sidebar-second" role="complementary">
+            <div class="layout-sidebar-second col-lg-2 col-md-3 col-sm-12" role="complementary">
                 {{ page.sidebar_second }}
-            </aside>
+            </div>
         {% endif %}
+
     </main>
 
-    <div class="tertiary">
+    <div class="tertiary row">
         {% if page.tertiary_first %}
-            <div class="tertiary_first">
+            <div class="tertiary_first col-lg-4 col-md-4 col-sm-12">
                 {{ page.tertiary_first }}
             </div>
         {% endif %}
         {% if page.tertiary_second %}
-            <div class="tertiary_second">
+            <div class="tertiary_second  col-lg-4 col-md-4 col-sm-12">
                 {{ page.tertiary_second }}
             </div>
         {% endif %}
         {% if page.tertiary_third %}
-            <div class="tertiary_third">
+            <div class="tertiary_third col-lg-4 col-md-4 col-sm-12">
                 {{ page.tertiary_third }}
             </div>
         {% endif %}
