@@ -2,6 +2,7 @@ name: Star Trek
 type: theme
 description: a star trek drupal 8 site
 core: 8.x
+base theme: bootstrap
 libraries:
   - star_trek/global-styling
   - star_trek/hail_ship
