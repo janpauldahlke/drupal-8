@@ -2,3 +2,14 @@
 body {
   background: #a2a2a2;
 }
+
+/* line 10, ../../sass/theme/styles.scss */
+.block--header_first--test img {
+  width: 100%;
+}
+/* line 17, ../../sass/theme/styles.scss */
+.block--header-second--test p {
+  width: 100%;
+  min-height: 10px;
+  background: red;
+}

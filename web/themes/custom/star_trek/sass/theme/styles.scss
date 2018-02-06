@@ -3,3 +3,24 @@ body {
 }
 
 
+.block{
+
+  &--header_first{
+    &--test{
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &--header-second{
+    &--test{
+      p {
+        width: 100%;
+        min-height: 10px;
+        background: red;
+      }
+    }
+  }
+}
+
+
