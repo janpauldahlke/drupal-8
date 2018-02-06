@@ -3,3 +3,11 @@ global-styling:
   css:
     theme:
       css/theme/styles.css: {}
+
+hail_ship:
+  version: 1.x
+  js:
+    js/hail_ship.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

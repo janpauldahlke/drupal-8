@@ -4,6 +4,7 @@ description: a star trek drupal 8 site
 core: 8.x
 libraries:
   - star_trek/global-styling
+  - star_trek/hail_ship
 regions:
   messages: 'Messages'
   header_first: 'Header first'

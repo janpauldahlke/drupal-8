@@ -1,5 +1,10 @@
 body{
-    background: red;
+    background: #a2a2a5;
+    max-width: 1920px;
+}
+
+div {
+    border: 1px solid red;
 }
 
 .layout-container > header {
@@ -8,7 +13,37 @@ body{
     justify-content: center;
 }
 
-header > div {
 
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
 }
 
+.features > div {
+    padding:0px 10px;
+}
+
+.features_first{
+    flex-basis: 20%;
+}
+.features_third{
+    flex-basis: 20%;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.layout-content{
+    text-align: center;
+    padding: 0px 10px;
+    flex-basis: 60%;
+}
+
+/* TODO
+create webpack to compile scss to sass, nice and slow
+*/
