@@ -25,6 +25,17 @@ ohne bindings etwas kompliziert, also lieber dem PATH hinzufügen:
 ```./vendor/bin/drupal site:mode dev```um in den dev modus zu gelangen
 
 
+install compass und sass (beides sind ruby gems, also ggf vorher ruby installieren)
+```sudo gem install sass --no-user-install```
+```gem install compass```
+
+wechsle nach:
+`/web/themes/custom/star_trek`
+```compass init``` um struktur zu erzeugen
+```compass watch``` um den filewatcher zu aktivieren
+
+
+
 # Composer template for Drupal projects
 
 [![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
